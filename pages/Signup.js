@@ -41,48 +41,48 @@ const Signup = () => {
                 />
               </Col>
               <Col xl={6}>
-                <div class={styles.CardBody}>
-                  <h3 class={styles.Signuph3}>Sign up</h3>
-                  <div class={styles.FormOutline}>
+                <div className={styles.CardBody}>
+                  <h3 className={styles.Signuph3}>Sign up</h3>
+                  <div className={styles.FormOutline}>
                     <Row>
                       <Col xl={6}>
-                        <label class="form-label" for="form3Example8">
+                        <label className="form-label" for="form3Example8">
                           First Name
                         </label>
                         <input
                           {...register("firstName")}
                           type="text"
                           id="form"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                         />
                       </Col>
                       <Col xl={6}>
-                        <label class="form-label" for="form3Example8">
+                        <label className="form-label" for="form3Example8">
                           Last Name
                         </label>
                         <input
                           {...register("lastName")}
                           type="text"
                           id="form"
-                          class="form-control form-control-lg"
+                          className="form-control form-control-lg"
                         />
                       </Col>
                     </Row>
                   </div>
-                  <div class={styles.FormOutline}>
-                    <label class="form-label" for="form3Example97">
+                  <div className={styles.FormOutline}>
+                    <label className="form-label" for="form3Example97">
                       Email
                     </label>
                     <input
                       {...register("email")}
                       type="text"
                       id="form"
-                      class="form-control form-control-lg"
+                      className="form-control form-control-lg"
                     />
                   </div>
 
-                  <div class={styles.FormOutline}>
-                    <label class="form-label" for="form3Example8">
+                  <div className={styles.FormOutline}>
+                    <label className="form-label" for="form3Example8">
                       Password
                     </label>
 
@@ -90,12 +90,12 @@ const Signup = () => {
                       {...register("password")}
                       type="text"
                       id="form"
-                      class="form-control form-control-lg"
+                      className="form-control form-control-lg"
                     />
                   </div>
 
-                  <div class={styles.FormOutline}>
-                    <label class="form-label" for="form3Example8">
+                  <div className={styles.FormOutline}>
+                    <label className="form-label" for="form3Example8">
                       Confirm Password
                     </label>
 
@@ -103,23 +103,23 @@ const Signup = () => {
                       {...register("conformPassword")}
                       type="text"
                       id="form"
-                      class="form-control form-control-lg"
+                      className="form-control form-control-lg"
                     />
                   </div>
 
-                  <div class={styles.FormOutline}>
-                    <label class="form-label" for="form3Example97">
+                  <div className={styles.FormOutline}>
+                    <label className="form-label" for="form3Example97">
                       Phone Number
                     </label>
                     <input
                       {...register("phoneNumber")}
                       type="text"
                       id="form"
-                      class="form-control form-control-lg"
+                      className="form-control form-control-lg"
                     />
                   </div>
-                  <div class={styles.FormOutline}>
-                    <label class="form-label" for="form3Example8">
+                  <div className={styles.FormOutline}>
+                    <label className="form-label" for="form3Example8">
                       Address
                     </label>
 
@@ -127,11 +127,11 @@ const Signup = () => {
                       {...register("address")}
                       type="text"
                       id="form"
-                      class="form-control form-control-lg"
+                      className="form-control form-control-lg"
                     />
                   </div>
-                  <div class={styles.SubmitButton}>
-                    <button type="submit" class={styles.Submit}>
+                  <div className={styles.SubmitButton}>
+                    <button type="submit" className={styles.Submit}>
                       signup
                     </button>
                   </div>
