@@ -46,9 +46,7 @@ const Signup = () => {
                   <div className={styles.FormOutline}>
                     <Row>
                       <Col xl={6}>
-                        <label className="form-label" for="form3Example8">
-                          First Name
-                        </label>
+                        <label className="form-label">First Name</label>
                         <input
                           {...register("firstName")}
                           type="text"
@@ -57,9 +55,7 @@ const Signup = () => {
                         />
                       </Col>
                       <Col xl={6}>
-                        <label className="form-label" for="form3Example8">
-                          Last Name
-                        </label>
+                        <label className="form-label">Last Name</label>
                         <input
                           {...register("lastName")}
                           type="text"
@@ -70,9 +66,7 @@ const Signup = () => {
                     </Row>
                   </div>
                   <div className={styles.FormOutline}>
-                    <label className="form-label" for="form3Example97">
-                      Email
-                    </label>
+                    <label className="form-label">Email</label>
                     <input
                       {...register("email")}
                       type="text"
@@ -82,9 +76,7 @@ const Signup = () => {
                   </div>
 
                   <div className={styles.FormOutline}>
-                    <label className="form-label" for="form3Example8">
-                      Password
-                    </label>
+                    <label className="form-label">Password</label>
 
                     <input
                       {...register("password")}
@@ -95,9 +87,7 @@ const Signup = () => {
                   </div>
 
                   <div className={styles.FormOutline}>
-                    <label className="form-label" for="form3Example8">
-                      Confirm Password
-                    </label>
+                    <label className="form-label">Confirm Password</label>
 
                     <input
                       {...register("conformPassword")}
@@ -108,9 +98,7 @@ const Signup = () => {
                   </div>
 
                   <div className={styles.FormOutline}>
-                    <label className="form-label" for="form3Example97">
-                      Phone Number
-                    </label>
+                    <label className="form-label">Phone Number</label>
                     <input
                       {...register("phoneNumber")}
                       type="text"
@@ -119,9 +107,7 @@ const Signup = () => {
                     />
                   </div>
                   <div className={styles.FormOutline}>
-                    <label className="form-label" for="form3Example8">
-                      Address
-                    </label>
+                    <label className="form-label">Address</label>
 
                     <input
                       {...register("address")}
