@@ -6,6 +6,7 @@ import { carePagedetail } from "utils/listOfdata";
 const Caredetails = () => {
   const [currentIndex, SetcurrentIndex] = useState(0);
   const [activeIndex, SetactiveIndex] = useState(0);
+
   const Next = () => {
     if (currentIndex >= carePagedetail.length - 1) {
     } else {
@@ -64,6 +65,7 @@ const Caredetails = () => {
                       key={i}
                       className={styles.careButton}
                       onClick={() => SetcurrentIndex(i)}
+                      style={currentIndex === i ? { color: "#e39ba6" } : null}
                     >
                       {i + 1}
                     </button>

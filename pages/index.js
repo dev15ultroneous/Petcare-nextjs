@@ -9,9 +9,16 @@ import ClientFeedback from "@/components/clientFeedback";
 import NavBar from "@/components/navBar";
 import Footer from "@/components/Footer";
 import { lazy, Suspense } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const carePetsection = lazy(() => import("@/components/carePetsection"));
 export default function Home() {
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
   return (
     <Suspense fallback={<div style={{ color: "black" }}>Loading....</div>}>
       <>
@@ -20,7 +27,11 @@ export default function Home() {
           <Container fluid className={styles.contFluid}>
             <Row>
               <Col xl={6}>
-                <div className={styles.introText}>
+                <div
+                  className={styles.introText}
+                  data-aos="fade"
+                  data-aos-duration="1500"
+                >
                   <h2>
                     Your <span>Pet</span> is part of our family
                   </h2>
@@ -31,29 +42,10 @@ export default function Home() {
                 </div>
                 <Row>
                   <Col xl={6} xs={6} className={styles.bookButton}>
-                    <Button
-                      style={{
-                        border: "2px solid #E39BA6 !important",
-                        background: " #E39BA6  !important",
-                        color: "#fff",
-                        borderRadius: "20rem",
-                      }}
-                    >
-                      Book A Schedule
-                    </Button>
+                    <Button className={styles.book}>Book A Schedule</Button>
                   </Col>
                   <Col xl={6} xs={6} className={styles.priceButton}>
-                    <Button
-                      style={{
-                        width: "9rem",
-                        border: "2px dotted #E39BA6 !important",
-                        background: " #fff",
-                        color: "black",
-                        borderRadius: "20rem",
-                      }}
-                    >
-                      Price Pack
-                    </Button>
+                    <Button className={styles.pricePack}>Price Pack</Button>
                   </Col>
                   <section className={styles.doItsection}>
                     <Image src={"/Images/arrow.svg"} alt="arrow" />
@@ -123,7 +115,9 @@ export default function Home() {
         </section>
 
         <section className={styles.servicesFluffy}>
-          <h2>Services for fluffy companion</h2>
+          <h2 data-aos="fade" data-aos-duration="1500">
+            Services for fluffy companion
+          </h2>
           <p>
             Have a look at our vast range of services we provide for your pets.
           </p>
